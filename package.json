@@ -1,15 +1,13 @@
 {
-  "name": "first-app",
+  "name": "aws_pipeline_web_app",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Node.js on Docker",
+  "author": "Ivan Polovyi <polovyiivan@gmail.com>",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.17.1"
   }
 }
