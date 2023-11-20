@@ -1,6 +1,12 @@
-FROM node:slim
-WORKDIR /app
-COPY . /app
-RUN npm install 
-EXPOSE 3000
-CMD node index.js
+FROM node:14-alpine
+
+# Create app directory
+WORKDIR /usr/src/app
+
+COPY . .
+
+RUN npm install
+
+EXPOSE 8080
+
+CMD [ "node", "server.js" ]
